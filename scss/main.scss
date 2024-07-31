@@ -1,15 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import "base";
+@import "typography";
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
-}
+@import "sidebar";
+@import "header";
+@import "realtors";
+@import "features";
+@import "story";
+@import "homes";
+@import "gallery";
+@import "footer";
