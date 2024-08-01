@@ -1,3 +1,29 @@
 .sidebar {
   flex-basis: 8rem;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+}
+
+.nav-btn {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 6rem;
+  margin-top: 1rem;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+  }
+
+  &__center-line,
+  &::before,
+  &::after {
+    width: 4.5rem;
+    height: 2px;
+    background-color: var(--color-grey-light-1);
+  }
 }
