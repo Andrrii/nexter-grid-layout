@@ -35,3 +35,11 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
