@@ -1,0 +1,30 @@
+.features {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  margin: 15rem 0;
+}
+
+.feature {
+  display: flex;
+  gap: 2.5rem;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__icon-box {
+    align-self: flex-start;
+    flex-basis: 4.5rem;
+    flex-shrink: 0;
+  }
+
+  &__icon {
+    fill: var(--color-primary);
+    height: 4.5rem;
+    transform: translateY(-1rem);
+  }
+}
