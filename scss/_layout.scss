@@ -6,3 +6,9 @@
 .main-content {
   flex: 1;
 }
+
+.center-content {
+  width: calc(100% - 12rem);
+  max-width: 112rem;
+  margin: 0 auto;
+}
