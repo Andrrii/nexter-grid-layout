@@ -3,9 +3,11 @@
   display: flex;
 }
 
-.main-content {
+.content-wrapper {
   flex: 1;
+}
 
+.main-content {
   &__centered {
     width: calc(100% - 12rem);
     max-width: 112rem;
