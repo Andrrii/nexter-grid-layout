@@ -1,5 +1,9 @@
 .hero {
   display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
 }
 
 .header {
@@ -50,6 +54,11 @@
     justify-content: space-evenly;
     gap: 3rem;
 
+    // @media only screen and (max-width: $bp-small) {
+    //   flex-direction: column;
+    //   align-self: center;
+    // }
+
     & > img {
       max-height: 2.5rem;
       filter: brightness(70%);
@@ -73,6 +82,15 @@
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, 7rem max-content);
+      grid-row-gap: 2vh;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 7rem max-content;
+    }
   }
 
   &__img {
